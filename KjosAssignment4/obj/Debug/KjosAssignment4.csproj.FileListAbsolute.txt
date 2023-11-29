@@ -50,8 +50,6 @@ C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\roslyn\
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\roslyn\vbc.rsp
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\roslyn\VBCSCompiler.exe
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\obj\Debug\KjosAssignment4.csproj.AssemblyReference.cache
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\obj\Debug\KjosAssignment4.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\lkjos\CSCI213Assignment4\KjosAssignment4\obj\Debug\KjosAssignment4.csproj.CopyComplete
