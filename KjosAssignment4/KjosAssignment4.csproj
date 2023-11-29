@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminInfo\adminpage.aspx" />
     <Content Include="App_Data\KarateSchool.mdf" />
     <Content Include="App_Data\KarateSchool_log.ldf">
       <DependentUpon>KarateSchool.mdf</DependentUpon>
@@ -117,7 +118,9 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="InstructorInfo\instructorpage.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MemberInfo\memberpage.aspx" />
     <Content Include="obj\Debug\KjosAssignment4.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\KjosAssignment4.dll" />
     <Content Include="obj\Debug\KjosAssignment4.pdb" />
@@ -184,6 +187,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminInfo\adminpage.aspx.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInfo\adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -193,6 +203,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorInfo\instructorpage.aspx.cs">
+      <DependentUpon>instructorpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorInfo\instructorpage.aspx.designer.cs">
+      <DependentUpon>instructorpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LINQ.designer.cs">
       <AutoGen>True</AutoGen>
@@ -205,6 +222,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInfo\memberpage.aspx.cs">
+      <DependentUpon>memberpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberInfo\memberpage.aspx.designer.cs">
+      <DependentUpon>memberpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
