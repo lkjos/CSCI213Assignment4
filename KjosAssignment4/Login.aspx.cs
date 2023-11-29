@@ -55,21 +55,21 @@ namespace KjosAssignment4
 
                 FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
 
-                Response.Redirect("~/memberpage.aspx");
+                Response.Redirect("~/MemberInfo/memberpage.aspx");
             }
             else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Instructor")
             {
 
                 FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
 
-                Response.Redirect("~/instructorpage.aspx");
+                Response.Redirect("~/InstructorInfo/instructorpage.aspx");
             }
             else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Administrator")
             {
 
                 FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
 
-                Response.Redirect("~/administratorpage.aspx");
+                Response.Redirect("~/AdminInfo/administratorpage.aspx");
             }
             else
                 Response.Redirect("Login.aspx", true);
