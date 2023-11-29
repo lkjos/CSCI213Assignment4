@@ -12,7 +12,7 @@ namespace KjosAssignment4
     {
         //Connect to the database
         LINQDataContext dbcon;
-        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment4\\KjosAssignment4\\App_Data\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
 
 
         protected void Page_Load(object sender, EventArgs e)
