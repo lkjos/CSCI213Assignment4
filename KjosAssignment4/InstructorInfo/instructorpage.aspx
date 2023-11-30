@@ -9,7 +9,7 @@
             Hi <asp:LoginName ID="LoginName1" runat="server" />
             <br />
             <br />
-            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
 
         </div>
     </main>
