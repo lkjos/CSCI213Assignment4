@@ -6,7 +6,7 @@
         <div>
             Welcome,
             <asp:Label ID="NameLabel" runat="server" Text="name"></asp:Label>
-&nbsp;!<br />
+            !<br />
             <br />
             <asp:GridView ID="resultGridView" runat="server" CellPadding="4" ForeColor="Black" GridLines="Vertical" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" >
                 <AlternatingRowStyle BackColor="White" />
