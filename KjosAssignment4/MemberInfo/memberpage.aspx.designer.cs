@@ -15,13 +15,22 @@ namespace KjosAssignment4.MemberInfo
     {
 
         /// <summary>
-        /// LoginName1 control.
+        /// nameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginName LoginName1;
+        protected global::System.Web.UI.WebControls.Label nameLabel;
+
+        /// <summary>
+        /// resultGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView resultGridView;
 
         /// <summary>
         /// LoginStatus1 control.
