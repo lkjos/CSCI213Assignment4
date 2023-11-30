@@ -257,8 +257,6 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="AdminInfo\Web.config" />
-    <Content Include="InstructorInfo\Web.config" />
     <None Include="LINQ.dbml.layout">
       <DependentUpon>LINQ.dbml</DependentUpon>
     </None>
@@ -266,7 +264,6 @@
     <Content Include="obj\Debug\KjosAssignment4.csproj.AssemblyReference.cache" />
     <Content Include="obj\Debug\KjosAssignment4.csproj.CopyComplete" />
     <Content Include="obj\Debug\KjosAssignment4.csproj.CoreCompileInputs.cache" />
-    <Content Include="MemberInfo\Web.config" />
     <None Include="packages.config" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />

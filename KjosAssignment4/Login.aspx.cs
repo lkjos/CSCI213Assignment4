@@ -26,7 +26,7 @@ namespace KjosAssignment4
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-
+            IncorrectLabel.Visible = false;
 
             string nUserName = Login1.UserName;
             string nPassword = Login1.Password;
@@ -38,41 +38,44 @@ namespace KjosAssignment4
 
 
             // Search for the current User, validate UserName and Password
-            NetUser myUser = (from x in dbcon.NetUsers
-                              where x.UserName == HttpContext.Current.Session["nUserName"].ToString()
-                              && x.UserPassword == HttpContext.Current.Session["uPass"].ToString()
-                              select x).First();
-
-            if (myUser != null)
+            try
             {
-                //Add UserID and User type to the Session
-                HttpContext.Current.Session["userID"] = myUser.UserID;
-                HttpContext.Current.Session["userType"] = myUser.UserType;
+                NetUser myUser = (from x in dbcon.NetUsers
+                                  where x.UserName == HttpContext.Current.Session["nUserName"].ToString()
+                                  && x.UserPassword == HttpContext.Current.Session["uPass"].ToString()
+                                  select x).First();
+                if (myUser != null)
+                {
+                    //Add UserID and User type to the Session
+                    HttpContext.Current.Session["userID"] = myUser.UserID;
+                    HttpContext.Current.Session["userType"] = myUser.UserType;
 
+                }
+                if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Member")
+                {
+
+                    FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
+
+                    Response.Redirect("~/MemberInfo/memberpage.aspx");
+                }
+                else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Instructor")
+                {
+
+                    FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
+
+                    Response.Redirect("~/InstructorInfo/instructorpage.aspx");
+                }
+                else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Administrator")
+                {
+
+                    FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
+
+                    Response.Redirect("~/AdminInfo/administratorpage.aspx");
+                }
+                else
+                    Response.Redirect("Login.aspx", true);
             }
-            if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Member")
-            {
-
-                FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
-
-                Response.Redirect("~/MemberInfo/memberpage.aspx");
-            }
-            else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Instructor")
-            {
-
-                FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
-
-                Response.Redirect("~/InstructorInfo/instructorpage.aspx");
-            }
-            else if (myUser != null && HttpContext.Current.Session["userType"].ToString().Trim() == "Administrator")
-            {
-
-                FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
-
-                Response.Redirect("~/AdminInfo/administratorpage.aspx");
-            }
-            else
-                Response.Redirect("Login.aspx", true);
+            catch (Exception ex) { }
 
 
         }

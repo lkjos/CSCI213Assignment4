@@ -10,6 +10,8 @@
     <form id="form1" runat="server">
         <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
         </asp:Login>
+        <br />
+        <asp:Label ID="IncorrectLabel" runat="server" ForeColor="Red" Text="Incorrect username or password" Visible="False"></asp:Label>
     </form>
 </body>
 </html>
