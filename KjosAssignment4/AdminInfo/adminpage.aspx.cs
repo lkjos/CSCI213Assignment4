@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -12,7 +15,7 @@ namespace KjosAssignment4.AdminInfo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)

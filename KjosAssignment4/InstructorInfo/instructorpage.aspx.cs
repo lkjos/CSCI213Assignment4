@@ -46,7 +46,7 @@ namespace KjosAssignment4.InstructorInfo
                 DataSet ds = new DataSet();
                 //Fill set with data from query
                 dAdapter.Fill(ds);
-                //Add date to the table
+                //Add data to the table
                 resultGridView.DataSource = ds;
                 resultGridView.DataBind();
 
