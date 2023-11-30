@@ -70,13 +70,12 @@ namespace KjosAssignment4
 
                     FormsAuthentication.RedirectFromLoginPage(HttpContext.Current.Session["nUserName"].ToString(), true);
 
-                    Response.Redirect("~/AdminInfo/administratorpage.aspx");
+                    Response.Redirect("~/AdminInfo/adminpage.aspx");
                 }
                 else
                     Response.Redirect("Login.aspx", true);
             }
-            catch (Exception ex) { }
-
+            catch (Exception ex){ }
 
         }
     }
